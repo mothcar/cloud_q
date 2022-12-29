@@ -32,14 +32,8 @@ export default defineComponent({
 
   methods: {
     async getAllUser() {
-      const url = 'https://port-0-cloud-node-express-fao2flc1y1v2n.gksl2.cloudtype.app/'
-      const res = await axios.get(url,{
-      headers: {
-              "Access-Control-Allow-Origin": "*",
-              "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-              "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
-            }
-      })
+      const url = 'https://port-0-m16-node-express-fao2flc8m4733.gksl2.cloudtype.app/'
+      const res = await axios.get(url)
       console.log('get data : ', res)
     }
   }
